@@ -42,8 +42,13 @@ function doTheThing(){
     })
 }
 
+// function to display what the thing did, obviously not done
+async function showTheThings(){
+    let cardGroup = document.createElement(cardGroup);
+}
+
 // Try to play with the HTML stuffs
-const button = document.querySelector('button')
 
 // The magic button!
-button.addEventListener('click', doTheThing)
+const button = document.querySelector('button')
+button.addEventListener('click', doTheThing, showTheThings)

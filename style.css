@@ -1,0 +1,19 @@
+.body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#intro {
+    background-color: rgb(229, 117, 120);
+}
+
+#left-card {
+    background-color: rgb(255, 249, 172);
+}
+
+#center-card {
+    background-color: lightgray;
+}
+
+#right-card {
+    background-color: rgb(130, 152, 184);
+}
