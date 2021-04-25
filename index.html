@@ -1,67 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>PokéAPI Challenge Go!</title>
-</head>
-<body>
-    <!--Top box containing intro and generator button-->
-    <div class="card text-center" id="intro">
-        <div class="card-header">
-        </div>
-        <div class="card-body">
-          <h3 class="card-title">What kind of Pokémon are you?</h3>
-          <h4 class="card-text">Hoenn Addition</h4>
-          <p class="card-text">Featuring: a random Pokémon between #251-#386.</p>
-          <button class="btn btn-primary" id="masterButtonofButtoning">What will it be?</button>
-        </div>
-        <div class="card-footer text-muted">
-        </div>
-      </div>
 
-    <!--Three center cards, from left to right: types, image/#/name, abilites-->
-    <div class="card-group">
-        <!--types-->
-        <div class="card text-center" id="left-card">
-          <div class="card-body">
-            <h5 class="card-title">Types</h5>
-            <p class="card-text">
-                <span class="typeSpan"></span>
-                <span class="typeSpan"></span>
-            </p>
-          </div>
-        </div>
-        <!--image/#/name-->
-        <div class="card text-center" id="center-card">
-          <img src="" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title">Ta-da!</h5>
-            <p class="card-text">
-                <span class="dexNumberSpan"></span>
-                <span class="nameSpan"></span>
-            </p>
-            <p class="card-text"><small class="text-muted">Why not try again, and see what else you get?</small></p>
-          </div>
-        </div>
-        <!--abilities-->
-        <div class="card text-center" id="right-card">
-          <div class="card-body">
-            <h5 class="card-title">Abilities</h5>
-            <p class="card-text">
-                <span class="abilitySpan"></span>
-                <span class="abilitySpan"></span>
-            </p>
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>PokéAPI Challenge Go!</title>
+</head>
+
+<body>
+  <!--Top box containing intro and generator button-->
+  <div class="card text-center" id="intro">
+    <div class="card-header">
+    </div>
+    <div class="card-body">
+      <h3 class="card-title">What kind of Pokémon are you?</h3>
+      <h4 class="card-text">Hoenn Addition</h4>
+      <p class="card-text">Featuring: a random Pokémon between #251-#386.</p>
+      <button class="btn btn-primary" id="masterButtonOfButtoning">What will it be?</button>
+    </div>
+    <div class="card-footer text-muted">
+    </div>
+  </div>
+
+  <!--Three center cards, from left to right: types, image/#/name, abilites-->
+  <div class="card-group">
+    <!--types-->
+    <div class="card text-center" id="left-card">
+      <div class="card-body">
+        <h5 class="card-title">Types</h5>
+        <p class="card-text">
+          <span id="type1Span"></span>
+          <span id="type2Span"></span>
+        </p>
       </div>
-    
-    
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    </div>
+    <!--image/#/name-->
+    <div class="card text-center" id="center-card">
+      <img src="" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Ta-da!</h5>
+        <img id="currentImg" src="" alt="">
+        <p class="card-text">
+          <span id="dexNumberSpan"></span>
+          <span id="nameSpan"></span>
+        </p>
+        <p class="card-text"><small class="text-muted">Why not try again, and see what else you get?</small></p>
+      </div>
+    </div>
+    <!--abilities-->
+    <div class="card text-center" id="right-card">
+      <div class="card-body">
+        <h5 class="card-title">Abilities</h5>
+        <p class="card-text">
+          <span id="defAbilitySpan"></span>
+          <span id="hidAbilitySpan"></span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>
